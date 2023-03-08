@@ -9,3 +9,4 @@ class Pub:
         drink_price = drink.price
         if drink.price >= customer.wallet:
             self.till += drink.price
+            customer.buy_a_drink (drink)
