@@ -3,8 +3,8 @@ class Pub:
         self.name = name
         self.till = till
         self.drinks = drinks
+        self.max_drunkenness = 25
     
 
     def sell_drink(self, drink, customer):
-        if drink.price <= customer.wallet:
-            self.till += drink.price
+        self.till += drink.price
