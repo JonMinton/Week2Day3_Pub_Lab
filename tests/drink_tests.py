@@ -4,9 +4,9 @@ from src.drink import Drink
 class TestDrink(unittest.TestCase):
 
     def setUp(self):
-        self.drink1 = Drink("Beer", 4.00, 3.00)
-        self.drink2 = Drink("Wine", 6.00, 6.00)
-        self.drink3 = Drink("Champagne", 12.00, 5.00)
+        self.drink1 = Drink("Beer", 4.00, 3.00, 1)
+        self.drink2 = Drink("Wine", 6.00, 6.00, 1)
+        self.drink3 = Drink("Champagne", 12.00, 5.00, 1)
         self.drinks = [self.drink1, self.drink2, self.drink3]
 
     def test_drinks_have_names(self):
