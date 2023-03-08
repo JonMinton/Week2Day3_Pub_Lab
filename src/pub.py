@@ -6,7 +6,5 @@ class Pub:
     
 
     def sell_drink(self, drink, customer):
-        drink_price = drink.price
-        if drink.price >= customer.wallet:
+        if drink.price <= customer.wallet:
             self.till += drink.price
-            customer.buy_a_drink (drink)
